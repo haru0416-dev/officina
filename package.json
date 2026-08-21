@@ -1,0 +1,43 @@
+{
+  "name": "officina-skill",
+  "version": "0.1.0",
+  "description": "Install the Officina Labs-primitive extraction Skill for Codex and Claude Code.",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "officina-skill": "bin/officina-skill.js",
+    "officina-install": "bin/officina-skill.js"
+  },
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "README.ja.md",
+    "LICENSE",
+    "agents/",
+    "references/",
+    "examples/",
+    "evals/fixtures/",
+    "evals/rubric.md",
+    "evals/value-metrics.md",
+    "evals/runs/README.md",
+    "evals/runs/generic-comparison.md",
+    "scripts/check_package.py",
+    "bin/officina-skill.js"
+  ],
+  "scripts": {
+    "check": "python3 scripts/check_package.py && node --check bin/officina-skill.js",
+    "pack:dry": "npm pack --dry-run"
+  },
+  "keywords": [
+    "agent-skill",
+    "codex",
+    "claude-code",
+    "primitives",
+    "labs",
+    "product-strategy",
+    "open-source"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
